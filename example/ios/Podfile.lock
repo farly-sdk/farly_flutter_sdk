@@ -1,0 +1,35 @@
+PODS:
+  - Farly (1.0.2)
+  - farly_flutter_sdk (0.0.1):
+    - Farly (~> 1.0.2)
+    - Flutter
+  - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - farly_flutter_sdk (from `.symlinks/plugins/farly_flutter_sdk/ios`)
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Farly
+
+EXTERNAL SOURCES:
+  farly_flutter_sdk:
+    :path: ".symlinks/plugins/farly_flutter_sdk/ios"
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+
+SPEC CHECKSUMS:
+  Farly: d2fec32bc95fed170d6f9001787c1c0dfe96b29e
+  farly_flutter_sdk: b7ee98d1d8db1e14b2b5b165ac04dfc341dcf82f
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  integration_test: 13825b8a9334a850581300559b8839134b124670
+
+PODFILE CHECKSUM: 70d9d25280d0dd177a5f637cdb0f0b0b12c6a189
+
+COCOAPODS: 1.12.1
