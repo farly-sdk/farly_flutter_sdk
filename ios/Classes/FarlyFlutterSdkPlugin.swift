@@ -81,7 +81,7 @@ public class FarlyFlutterSdkPlugin: NSObject, FlutterPlugin {
             let args = call.arguments as! [String: Any]
             guard let apiKey = args["apiKey"] as? String,
                   let publisherId = args["publisherId"] as? String else {
-                result(nil)
+                result(FlutterError(code: "setup_error", message: "apiKey and publisherId are mandatory", details: nil))
                 return
             }
             Farly.shared.apiKey = apiKey
