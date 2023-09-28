@@ -1,11 +1,21 @@
 # farly_flutter_sdk
 
-The Farly Flutter SDK is a Flutter plugin that allows you to integrate the Farly SDK into your Flutter app.
+Farly SDK for Flutter
 
-## Getting Started
+## Installation
 
 See https://pub.dev/packages/farly_flutter_sdk/install
 
-## Full documentation
+## Usage
 
-#TODO: Add link to full documentation
+The full documentation is accessible at https://mobsuccess.notion.site/Farly-React-Native-SDK-82afeefd32e2423d93bf8c8e73846e14
+
+You can also check the example app in the `example` folder.
+
+## Releasing
+
+Push a new tag vX.Y.Z to trigger a release on pub.dev
+
+## License
+
+MIT

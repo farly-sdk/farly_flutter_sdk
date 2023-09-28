@@ -5,7 +5,7 @@ enum UserGender {
 }
 
 class OfferWallRequest {
-  /// Your unique id for the current user
+  /// Your unique id for the current user - the only required parameter
   final String userId;
 
   /// Current zipCode of the user, should be fetched from geolocation, not from geoip
