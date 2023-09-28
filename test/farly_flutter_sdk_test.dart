@@ -6,24 +6,13 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockFarlyFlutterSdkPlatform
     with MockPlatformInterfaceMixin
-    implements FarlyFlutterSdkPlatform {
-
-  @override
-  Future<String?> getPlatformVersion() => Future.value('42');
-}
+    implements FarlyFlutterSdkPlatform {}
 
 void main() {
-  final FarlyFlutterSdkPlatform initialPlatform = FarlyFlutterSdkPlatform.instance;
+  final FarlyFlutterSdkPlatform initialPlatform =
+      FarlyFlutterSdkPlatform.instance;
 
   test('$MethodChannelFarlyFlutterSdk is the default instance', () {
     expect(initialPlatform, isInstanceOf<MethodChannelFarlyFlutterSdk>());
-  });
-
-  test('getPlatformVersion', () async {
-    FarlyFlutterSdk farlyFlutterSdkPlugin = FarlyFlutterSdk();
-    MockFarlyFlutterSdkPlatform fakePlatform = MockFarlyFlutterSdkPlatform();
-    FarlyFlutterSdkPlatform.instance = fakePlatform;
-
-    expect(await farlyFlutterSdkPlugin.getPlatformVersion(), '42');
   });
 }

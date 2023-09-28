@@ -24,10 +24,6 @@ abstract class FarlyFlutterSdkPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
-  }
-
   Future setup({required String apiKey, required String publisherId}) {
     throw UnimplementedError('init() has not been implemented.');
   }

@@ -4,10 +4,6 @@ import 'farly_flutter_sdk_platform_interface.dart';
 import 'feed_element.dart';
 
 class FarlyFlutterSdk {
-  Future<String?> getPlatformVersion() {
-    return FarlyFlutterSdkPlatform.instance.getPlatformVersion();
-  }
-
   Future setup({required String apiKey, required String publisherId}) {
     return FarlyFlutterSdkPlatform.instance
         .setup(apiKey: apiKey, publisherId: publisherId);

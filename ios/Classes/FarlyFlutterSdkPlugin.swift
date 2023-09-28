@@ -75,8 +75,6 @@ public class FarlyFlutterSdkPlugin: NSObject, FlutterPlugin {
     
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         switch call.method {
-        case "getPlatformVersion":
-            result("iOS " + UIDevice.current.systemVersion)
         case "setup":
             let args = call.arguments as! [String: Any]
             guard let apiKey = args["apiKey"] as? String,
