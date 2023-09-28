@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:farly_flutter_sdk/feed_element.dart';
 import 'package:farly_flutter_sdk/offerwall_request.dart';
 import 'package:flutter/material.dart';
@@ -31,6 +33,9 @@ class _MyAppState extends State<MyApp> {
     super.initState();
     _farlyFlutterSdkPlugin.setup(apiKey: 'apiKey', publisherId: 'publisherId');
     _farlyFlutterSdkPlugin.requestAdvertisingIdAuthorization();
+    if (Platform.isIOS) {
+      _farlyFlutterSdkPlugin.requestAdvertisingIdAuthorization();
+    }
     refreshOffers();
   }
 
@@ -99,7 +104,7 @@ class _MyAppState extends State<MyApp> {
                     final feedElement = _feedElements[index];
                     return ListTile(
                       title: Text(feedElement.name),
-                      subtitle: Text(feedElement.smallDescription),
+                      subtitle: Text(feedElement.smallDescription ?? ''),
                     );
                   },
                 ),

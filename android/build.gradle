@@ -16,6 +16,7 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
 
@@ -40,8 +41,6 @@ android {
     dependencies {
         testImplementation 'junit:junit:4.13.2'
         testImplementation 'org.mockito:mockito-core:5.0.0'
-
-        implementation 'com.github.farly-sdk:farly-android-sdk:1.0.2'
     }
 
     testOptions {
@@ -53,4 +52,8 @@ android {
             }
         }
     }
+}
+
+dependencies {
+    implementation 'com.github.farly-sdk:farly-android-sdk:1.0.2'
 }
