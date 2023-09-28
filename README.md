@@ -4,6 +4,10 @@ Farly SDK for Flutter
 
 ## Installation
 
+[![Pub Version (including pre-releases)](https://img.shields.io/pub/v/farly_flutter_sdk)](https://pub.dev/packages/farly_flutter_sdk)
+
+This Flutter plugin is published on [pub.dev](https://pub.dev/packages/farly_flutter_sdk).
+
 See https://pub.dev/packages/farly_flutter_sdk/install
 
 ## Usage
