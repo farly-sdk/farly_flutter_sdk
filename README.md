@@ -25,6 +25,7 @@ From vscode, open `example/main.dart` and select `Run > Start Debugging` to laun
 ### Releasing
 
 First, bump the version in `pubspec.yaml` and `ios/farly_flutter_sdk.yaml`.
+Don't forget to fill in the CHANGELOG.md file.
 
 Then run the following commands (you will need to be logged in on pub.dev):
 
