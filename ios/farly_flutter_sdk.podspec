@@ -5,13 +5,13 @@
 Pod::Spec.new do |s|
   s.name             = 'farly_flutter_sdk'
   s.version          = '0.0.2'
-  s.summary          = 'A new Flutter plugin project.'
+  s.summary          = 'Farly Flutter SDK'
   s.description      = <<-DESC
-A new Flutter plugin project.
+The Farly Flutter SDK is a plugin for Flutter that allows you to integrate the Farly SDK into your Flutter app.
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://farly.io'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'Farly' => 'hello@farly.io' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'

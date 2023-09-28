@@ -16,9 +16,17 @@ The full documentation is accessible at https://mobsuccess.notion.site/Farly-Rea
 
 You can also check the example app in the `example` folder.
 
-## Releasing
+## Working on the plugin
 
-To release a new version, run the following commands:
+### Development
+
+From vscode, open `example/main.dart` and select `Run > Start Debugging` to launch the example app. You can select the device on the bottom right corner of the screen. (you will need the flutter extension installed).
+
+### Releasing
+
+First, bump the version in `pubspec.yaml` and `ios/farly_flutter_sdk.yaml`.
+
+Then run the following commands (you will need to be logged in on pub.dev):
 
 ```bash
 flutter pub publish --dry-run # Check that everything is ok
