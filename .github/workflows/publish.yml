@@ -7,6 +7,9 @@ on:
 
 jobs:
   publish:
+    permissions:
+      id-token: write
+      contents: read
     uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
     with:
       working-directory: ./
