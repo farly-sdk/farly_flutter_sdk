@@ -14,7 +14,12 @@ You can also check the example app in the `example` folder.
 
 ## Releasing
 
-Push a new tag vX.Y.Z to trigger a release on pub.dev
+To release a new version, run the following commands:
+
+```bash
+flutter pub publish --dry-run # Check that everything is ok
+flutter pub publish # Publish the new version
+```
 
 ## License
 
