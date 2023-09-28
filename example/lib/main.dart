@@ -36,6 +36,9 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> refreshOffers() async {
+    setState(() {
+      _feedElements = [];
+    });
     var feedElements = await _farlyFlutterSdkPlugin.getOfferwall(_req);
 
     // If the widget was removed from the tree while the asynchronous platform

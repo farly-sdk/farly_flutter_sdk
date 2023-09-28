@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -56,11 +58,16 @@ class MethodChannelFarlyFlutterSdk extends FarlyFlutterSdkPlatform {
   @override
   Future<List<FeedElement>> getOfferwall(Map<String, dynamic> req) async {
     try {
-      final result = await methodChannel.invokeMethod<List<FeedElement>>(
-          'getOfferwall', req);
-      return result ?? [];
+      var result =
+          await methodChannel.invokeMethod<String?>('getOfferwall', req);
+      if (result == null) {
+        return [];
+      }
+      final feedElementsJson = jsonDecode(result) as List<dynamic>;
+      return feedElementsJson
+          .map((e) => FeedElement.fromJson(e as Map<String, dynamic>))
+          .toList();
     } catch (e) {
-      print(e);
       return [];
     }
   }

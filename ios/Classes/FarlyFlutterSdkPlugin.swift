@@ -148,8 +148,14 @@ public class FarlyFlutterSdkPlugin: NSObject, FlutterPlugin {
                             result(nil)
                             return
                         }
-                        let json = offers.map(self.toJson)
-                        result(json)
+                        do {
+                            let jsonData = try JSONSerialization.data(withJSONObject: offers.map(self.toJson))
+                            let jsonString = String(data: jsonData, encoding: .utf8)
+                            result(jsonString)
+                        } catch {
+                            print("Error converting offers to JSON: \(error.localizedDescription)")
+                            result(nil)
+                        }
                     }
                 }
             } catch let e {
