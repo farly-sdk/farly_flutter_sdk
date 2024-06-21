@@ -1,6 +1,6 @@
 name: farly_flutter_sdk
 description: The Farly Flutter SDK is a plugin for Flutter that allows you to integrate the Farly SDK into your Flutter app.
-version: 1.0.3
+version: 1.0.5
 homepage: https://github.com/farly-sdk/farly_flutter_sdk
 
 environment:

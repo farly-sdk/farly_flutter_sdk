@@ -4,11 +4,10 @@ import 'farly_flutter_sdk_platform_interface.dart';
 import 'feed_element.dart';
 
 class FarlyFlutterSdk {
-  /// Initializes the Farly SDK with the given [apiKey] and [publisherId].
+  /// Initializes the Farly SDK with the given [publisherId].
   /// This method must be called before any other method.
-  Future setup({required String apiKey, required String publisherId}) {
-    return FarlyFlutterSdkPlatform.instance
-        .setup(apiKey: apiKey, publisherId: publisherId);
+  Future setup({required String publisherId}) {
+    return FarlyFlutterSdkPlatform.instance.setup(publisherId: publisherId);
   }
 
   /// Request authorization to use the advertising identifier.

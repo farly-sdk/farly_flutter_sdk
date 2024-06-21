@@ -77,12 +77,10 @@ public class FarlyFlutterSdkPlugin: NSObject, FlutterPlugin {
         switch call.method {
         case "setup":
             let args = call.arguments as! [String: Any]
-            guard let apiKey = args["apiKey"] as? String,
-                  let publisherId = args["publisherId"] as? String else {
-                result(FlutterError(code: "setup_error", message: "apiKey and publisherId are mandatory", details: nil))
+            guard let publisherId = args["publisherId"] as? String else {
+                result(FlutterError(code: "setup_error", message: "publisherId are mandatory", details: nil))
                 return
             }
-            Farly.shared.apiKey = apiKey
             Farly.shared.publisherId = publisherId
             
             result(nil)

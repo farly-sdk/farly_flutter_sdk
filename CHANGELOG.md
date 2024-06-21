@@ -1,3 +1,8 @@
+## Version 1.0.5
+
+Update native SDKs to 1.0.5.
+Api key is not needed anymore.
+
 ## Version 1.0.3
 
 Update native SDKs to 1.0.3.

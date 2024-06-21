@@ -31,7 +31,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    _farlyFlutterSdkPlugin.setup(apiKey: 'apiKey', publisherId: 'publisherId');
+    _farlyFlutterSdkPlugin.setup(publisherId: 'publisherId');
     if (Platform.isIOS) {
       _farlyFlutterSdkPlugin.requestAdvertisingIdAuthorization();
     }
