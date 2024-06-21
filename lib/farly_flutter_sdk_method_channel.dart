@@ -13,9 +13,8 @@ class MethodChannelFarlyFlutterSdk extends FarlyFlutterSdkPlatform {
   final methodChannel = const MethodChannel('farly_flutter_sdk');
 
   @override
-  Future setup({required String apiKey, required String publisherId}) async {
+  Future setup({required String publisherId}) async {
     await methodChannel.invokeMethod('setup', {
-      'apiKey': apiKey,
       'publisherId': publisherId,
     });
   }

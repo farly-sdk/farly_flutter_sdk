@@ -57,7 +57,6 @@ public class FarlyFlutterSdkPlugin implements FlutterPlugin, MethodCallHandler, 
     public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
         try {
             if (call.method.equals("setup")) {
-                Farly.getInstance().setApiKey(call.argument("apiKey"));
                 Farly.getInstance().setPublisherId(call.argument("publisherId"));
                 result.success("Android " + android.os.Build.VERSION.RELEASE);
             } else if (call.method.equals("getHostedOfferwallUrl")) {

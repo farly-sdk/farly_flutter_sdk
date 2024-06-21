@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'farly_flutter_sdk'
-  s.version          = '1.0.3'
+  s.version          = '1.0.5'
   s.summary          = 'Farly Flutter SDK'
   s.description      = <<-DESC
 The Farly Flutter SDK is a plugin for Flutter that allows you to integrate the Farly SDK into your Flutter app.
@@ -15,7 +15,7 @@ The Farly Flutter SDK is a plugin for Flutter that allows you to integrate the F
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.dependency 'Farly', '~> 1.0.3'
+  s.dependency 'Farly', '~> 1.0.5'
   s.platform = :ios, '11.0'
 
   # Flutter.framework does not contain a i386 slice.
